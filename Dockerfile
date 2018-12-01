@@ -5,7 +5,7 @@ FROM       ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update && apt-get install -y -q python-sphinx texlive texlive-latex-extra pandoc build-essential
+RUN apt-get update && apt-get install -y -q python-sphinx texlive texlive-latex-extra pandoc build-essential python-pip
 
 RUN mkdir documents
 
