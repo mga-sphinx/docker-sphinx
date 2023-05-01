@@ -6,7 +6,7 @@ LABEL org.opencontainers.image.documentation = "https://sphinx-doc.org/"
 LABEL org.opencontainers.image.source = "https://github.com/mga-sphinx/docker-sphinx"
 LABEL org.opencontainers.image.version = "6.2.1"
 LABEL org.opencontainers.image.licenses = "BSD-2-Clause"
-LABEL org.opencontainers.image.description = "LateX container image for Sphinx"
+LABEL org.opencontainers.image.description = "HTML container image for Sphinx"
 
 WORKDIR /docs
 RUN apt-get update \
@@ -14,21 +14,6 @@ RUN apt-get update \
       graphviz \
       imagemagick \
       make \
-      \
-      latexmk \
-      lmodern \
-      fonts-freefont-otf \
-      texlive-latex-recommended \
-      texlive-latex-extra \
-      texlive-fonts-recommended \
-      texlive-fonts-extra \
-      texlive-lang-cjk \
-      texlive-lang-chinese \
-      texlive-lang-japanese \
-      texlive-luatex \
-      texlive-xetex \
-      xindy \
-      tex-gyre \
  && apt-get autoremove \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
@@ -37,5 +22,7 @@ RUN apt-get update \
 
 RUN python3 -m pip install --no-cache-dir -U pip
 RUN python3 -m pip install --no-cache-dir Sphinx==6.2.1 Pillow
+RUN python3 -m pip install --no-cache-dir sphinx-rtd-theme \
+      furo sphinx-book-theme sphinx-press-theme
 
-CMD ["make", "latexpdf"]
+CMD ["make", "html"]

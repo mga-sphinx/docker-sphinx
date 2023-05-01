@@ -4,7 +4,7 @@ MAINTAINER Christophe CHAUVET <christophe.chauvet+docker@gmail.com>
 LABEL org.opencontainers.image.authors = "Mirounga Sphinx Team <https://github.com/mga-sphinx>"
 LABEL org.opencontainers.image.documentation = "https://sphinx-doc.org/"
 LABEL org.opencontainers.image.source = "https://github.com/mga-sphinx/docker-sphinx"
-LABEL org.opencontainers.image.version = "5.3.0"
+LABEL org.opencontainers.image.version = "6.2.1"
 LABEL org.opencontainers.image.licenses = "BSD-2-Clause"
 LABEL org.opencontainers.image.description = "Base container image for Sphinx"
 
@@ -21,6 +21,6 @@ RUN apt-get update \
  && rm -f /etc/ssh/ssh_host_*
 
 RUN python3 -m pip install --no-cache-dir -U pip
-RUN python3 -m pip install --no-cache-dir Sphinx==5.3.0 Pillow
+RUN python3 -m pip install --no-cache-dir Sphinx==6.2.1 Pillow
 
 CMD ["make", "html"]
