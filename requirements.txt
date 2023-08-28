@@ -1,4 +1,4 @@
-Sphinx==7.1.2
+Sphinx==7.2.4
 furo==2023.7.26
 sphinx-rtd-theme==1.2.2
 sphinx-book-theme==1.0.1
