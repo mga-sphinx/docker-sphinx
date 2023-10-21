@@ -3,5 +3,5 @@ furo==2023.7.26
 sphinx-rtd-theme==1.2.2
 sphinx-book-theme==1.0.1
 sphinx-press-theme==0.8.0
-sphinx-lint==0.6.8
+sphinx-lint==0.8.0
 Pillow==9.5.0
