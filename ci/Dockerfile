@@ -6,7 +6,7 @@ LABEL org.opencontainers.image.documentation = "https://sphinx-doc.org/"
 LABEL org.opencontainers.image.source = "https://github.com/mga-sphinx/docker-sphinx"
 LABEL org.opencontainers.image.version = "7.2.6"
 LABEL org.opencontainers.image.licenses = "BSD-2-Clause"
-LABEL org.opencontainers.image.description = "Base container image for Sphinx"
+LABEL org.opencontainers.image.description = "CI container image for Sphinx"
 
 
 WORKDIR /docs
@@ -22,6 +22,6 @@ RUN apt-get update \
  && rm -f /etc/ssh/ssh_host_*
 
 RUN python3 -m pip install --no-cache-dir -U pip
-RUN python3 -m pip install --no-cache-dir Sphinx==7.2.6 Pillow==10.1.0
+RUN python3 -m pip install --no-cache-dir Sphinx==7.2.6 Pillow==10.1.0 sphinx-lint==0.8.0
 
 CMD ["make", "html"]
