@@ -38,7 +38,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
       - name: Extract metadata (tags, labels) for Docker
         id: meta
-        uses: docker/metadata-action@69f6fc9d46f2f8bf0d5491e4aabe0bb8c6a4678a  # v4.0.1
+        uses: docker/metadata-action@9dc751fe249ad99385a2583ee0d084c400eee04e  # v5.4.0
         with:
           images: |
             mgasphinx/${{ matrix.name }}
