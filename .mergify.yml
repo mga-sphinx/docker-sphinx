@@ -1,7 +1,7 @@
 pull_request_rules:
   - name: automatic merge on CI success and review
     conditions:
-      - status-success=build (3.10)
+      - status-success=Validation (sphinx, base)
       - "#approved-reviews-by>=1"
       - "#review-requested=0"
       - "#changes-requested-reviews-by=0"
@@ -15,18 +15,10 @@ pull_request_rules:
       - merged
     actions:
       delete_head_branch: {}
-  - name: automatic merge for pyUp pull requests
-    conditions:
-      - author=pyup-bot
-      - status-success=build (3.10)
-      - label=dependencies
-    actions:
-      merge:
-        method: squash
   - name: automatic merge for dependabot pull requests
     conditions:
       - author~=^dependabot(|-preview)\[bot\]$
-      - status-success=build (3.10)
+      - status-success=Validation (sphinx, base)
       - label=dependencies
     actions:
       merge:
