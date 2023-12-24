@@ -1,0 +1,25 @@
+pull_request_rules:
+  - name: automatic merge on CI success and review
+    conditions:
+      - status-success=Validation (sphinx, base)
+      - "#approved-reviews-by>=1"
+      - "#review-requested=0"
+      - "#changes-requested-reviews-by=0"
+      - "#commented-reviews-by=0"
+      - label=ready-to-merge
+    actions:
+      merge:
+        method: squash
+  - name: delete head branch after merge
+    conditions:
+      - merged
+    actions:
+      delete_head_branch: {}
+  - name: automatic merge for dependabot pull requests
+    conditions:
+      - author~=^dependabot(|-preview)\[bot\]$
+      - status-success=Validation (sphinx, base)
+      - label=dependencies
+    actions:
+      merge:
+        method: squash
