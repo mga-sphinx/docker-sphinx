@@ -1,6 +1,6 @@
 FROM python:slim
-MAINTAINER Christophe CHAUVET <christophe.chauvet+docker@gmail.com>
 
+LABEL maintainer = "Christophe CHAUVET <christophe.chauvet+docker@gmail.com>"
 LABEL org.opencontainers.image.authors = "Mirounga Sphinx Team <https://github.com/mga-sphinx>"
 LABEL org.opencontainers.image.documentation = "https://sphinx-doc.org/"
 LABEL org.opencontainers.image.source = "https://github.com/mga-sphinx/docker-sphinx"
