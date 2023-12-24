@@ -1,0 +1,22 @@
+on: pull_request
+    
+jobs:
+  release:
+    name: Validation
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - name: sphinx
+            context: base
+          - name: sphinx-ci
+            context: ci
+          - name: sphinx-html
+            context: html
+          - name: sphinx-latexpdf
+            context: latexpdf
+    steps:
+      - uses: actions/checkout@v3
+      - uses: hadolint/hadolint-action@v3.1.0
+        with:
+          dockerfile: ${{ matrix.context }}/Dockerfile      
