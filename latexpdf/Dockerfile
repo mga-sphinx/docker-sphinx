@@ -14,7 +14,8 @@ RUN apt-get update \
       graphviz \
       imagemagick \
       make \
-      \
+      gettext \
+      sshpass \
       latexmk \
       lmodern \
       fonts-freefont-otf \
