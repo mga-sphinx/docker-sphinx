@@ -14,6 +14,8 @@ RUN apt-get update \
       graphviz \
       imagemagick \
       make \
+      gettext \
+      sshpass \
  && apt-get autoremove \
  && apt-get clean \
  && rm -rf /var/lib/apt/lists/* \
