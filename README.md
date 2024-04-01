@@ -9,9 +9,13 @@ These images are available at
 
 ## sphinx-base
 
+![Docker Pulls](https://img.shields.io/docker/pulls/mgasphinx/sphinx)
+
 Python docker image with Sphinx by default
 
 ## sphinx-html
+
+![Docker Pulls](https://img.shields.io/docker/pulls/mgasphinx/sphinx-html)
 
 Same as sphinx-base with some additionnals themes
 
@@ -22,5 +26,13 @@ Same as sphinx-base with some additionnals themes
 
 ## sphinx-latexpdf
 
+![Docker Pulls](https://img.shields.io/docker/pulls/mgasphinx/sphinx-latexpdf)
+
 Same as sphinx-base, with additonnal LateX packages
 to generate a PDF file
+
+## sphinx-ci
+
+![Docker Pulls](https://img.shields.io/docker/pulls/mgasphinx/sphinx-ci)
+
+Same as sphinx-base, with dedicate tools for CI
