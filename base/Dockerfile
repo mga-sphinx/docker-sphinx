@@ -5,7 +5,7 @@ LABEL maintainer = "Christophe CHAUVET <christophe.chauvet+docker@gmail.com>"
 LABEL org.opencontainers.image.authors = "Mirounga Sphinx Team <https://github.com/mga-sphinx>"
 LABEL org.opencontainers.image.documentation = "https://sphinx-doc.org/"
 LABEL org.opencontainers.image.source = "https://github.com/mga-sphinx/docker-sphinx"
-LABEL org.opencontainers.image.version = "7.2.6"
+LABEL org.opencontainers.image.version = "24.04.1"
 LABEL org.opencontainers.image.licenses = "BSD-2-Clause"
 LABEL org.opencontainers.image.description = "Base container image for Sphinx"
 
