@@ -35,4 +35,4 @@ to generate a PDF file
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/mgasphinx/sphinx-ci)
 
-Same as sphinx-base, with dedicate tools for CI
+Same as sphinx-base, with dedicate tools for CI (linter only)
