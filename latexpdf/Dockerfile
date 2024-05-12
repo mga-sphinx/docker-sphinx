@@ -4,7 +4,7 @@ LABEL maintainer = "Christophe CHAUVET <christophe.chauvet+docker@gmail.com>"
 LABEL org.opencontainers.image.authors = "Mirounga Sphinx Team <https://github.com/mga-sphinx>"
 LABEL org.opencontainers.image.documentation = "https://sphinx-doc.org/"
 LABEL org.opencontainers.image.source = "https://github.com/mga-sphinx/docker-sphinx"
-LABEL org.opencontainers.image.version = "24.04.1"
+LABEL org.opencontainers.image.version = "24.05.1"
 LABEL org.opencontainers.image.licenses = "BSD-2-Clause"
 LABEL org.opencontainers.image.description = "LateX container image for Sphinx"
 
@@ -14,6 +14,7 @@ RUN apt-get update \
       graphviz \
       imagemagick \
       make \
+      git-restore-mtime \
       gettext \
       sshpass \
       latexmk \
@@ -37,6 +38,6 @@ RUN apt-get update \
  && rm -f /etc/ssh/ssh_host_*
 
 RUN python3 -m pip install --no-cache-dir -U pip
-RUN python3 -m pip install --no-cache-dir Sphinx==7.2.6 Pillow==10.2.0
+RUN python3 -m pip install --no-cache-dir Sphinx==7.3.7 Pillow==10.3.0
 
 CMD ["make", "latexpdf"]
