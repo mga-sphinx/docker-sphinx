@@ -5,7 +5,7 @@ LABEL maintainer = "Christophe CHAUVET <christophe.chauvet+docker@gmail.com>"
 LABEL org.opencontainers.image.authors = "Mirounga Sphinx Team <https://github.com/mga-sphinx>"
 LABEL org.opencontainers.image.documentation = "https://sphinx-doc.org/"
 LABEL org.opencontainers.image.source = "https://github.com/mga-sphinx/docker-sphinx"
-LABEL org.opencontainers.image.version = "25.03.1"
+LABEL org.opencontainers.image.version = "25.07.1"
 LABEL org.opencontainers.image.licenses = "BSD-2-Clause"
 LABEL org.opencontainers.image.description = "Base container image for Sphinx"
 
@@ -20,7 +20,7 @@ RUN apt-get update \
  && apt-get autoremove \
  && apt-get clean \
  && python3 -m pip install --no-cache-dir -U pip \
- && python3 -m pip install --no-cache-dir Sphinx==8.1.3 Pillow==10.4.0 myst-parser==4.0.1 \
+ && python3 -m pip install --no-cache-dir Sphinx==8.2.3 Pillow==11.3.0 myst-parser==4.0.1 \
  && rm -rf /var/lib/apt/lists/* \
  && rm -rf /tmp/* /var/tmp/* \
  && rm -f /etc/ssh/ssh_host_*
