@@ -20,7 +20,7 @@ RUN apt-get update \
  && apt-get autoremove \
  && apt-get clean \
  && python3 -m pip install --no-cache-dir -U pip \
- && python3 -m pip install --no-cache-dir Sphinx==8.1.3 Pillow==10.4.0 \
+ && python3 -m pip install --no-cache-dir Sphinx==8.1.3 Pillow==10.4.0 myst-parser==4.0.1 \
  && rm -rf /var/lib/apt/lists/* \
  && rm -rf /tmp/* /var/tmp/* \
  && rm -f /etc/ssh/ssh_host_*

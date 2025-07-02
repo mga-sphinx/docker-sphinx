@@ -24,7 +24,7 @@ RUN apt-get update \
  && rm -f /etc/ssh/ssh_host_*
 
 RUN python3 -m pip install --no-cache-dir -U pip
-RUN python3 -m pip install --no-cache-dir Sphinx==8.1.3 Pillow==10.4.0 \
+RUN python3 -m pip install --no-cache-dir Sphinx==8.1.3 Pillow==10.4.0 myst-parser==4.0.1 \
       sphinx-rtd-theme \
       furo==2024.8.6 \
       sphinx-book-theme \
