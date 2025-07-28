@@ -1,5 +1,5 @@
 Sphinx==8.2.3
-furo==2024.8.6
+furo==2025.7.19
 sphinx-rtd-theme==3.0.2
 sphinx-book-theme==1.1.4
 sphinx-press-theme==0.9.1
