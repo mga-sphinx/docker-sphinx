@@ -16,7 +16,7 @@ jobs:
           - name: sphinx-latexpdf
             context: latexpdf
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
       - uses: hadolint/hadolint-action@v3.1.0
         with:
           dockerfile: ${{ matrix.context }}/Dockerfile      
