@@ -3,6 +3,6 @@ furo==2025.9.25
 sphinx-rtd-theme==3.0.2
 sphinx-book-theme==1.1.4
 sphinx-press-theme==0.9.1
-sphinx-lint==1.0.0
+sphinx-lint==1.0.1
 Pillow==12.0.0
 myst-parser==4.0.1
