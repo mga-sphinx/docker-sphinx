@@ -1,4 +1,4 @@
-Sphinx==9.0.4
+Sphinx==9.1.0
 furo==2025.12.19
 sphinx-rtd-theme==3.0.2
 sphinx-book-theme==1.1.4
