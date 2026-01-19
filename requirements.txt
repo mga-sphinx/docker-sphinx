@@ -5,4 +5,4 @@ sphinx-book-theme==1.1.4
 sphinx-press-theme==0.9.1
 sphinx-lint==1.0.2
 Pillow==12.1.0
-myst-parser==4.0.1
+myst-parser==5.0.0
