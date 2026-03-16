@@ -1,4 +1,11 @@
-on: pull_request
+name: Chack Hadolint
+
+on:
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
     
 jobs:
   release:
