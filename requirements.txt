@@ -1,7 +1,7 @@
 Sphinx==9.1.0
 furo==2025.12.19
 sphinx-rtd-theme==3.1.0
-sphinx-book-theme==1.1.4
+sphinx-book-theme==1.2.0
 sphinx-press-theme==0.9.1
 sphinx-lint==1.0.2
 Pillow==12.1.1
