@@ -19,10 +19,11 @@ Python docker image with Sphinx by default
 
 Same as sphinx-base with some additionnals themes
 
-- furo
-- sphinx-rtd-theme 
-- sphinx-book-theme 
-- sphinx-press-theme
+- [furo](https://pradyunsg.me/furo/)
+- [sphinx-rtd-theme](https://sphinx-rtd-theme.readthedocs.io/en/stable/) 
+- [sphinx-book-theme](https://sphinx-book-theme.readthedocs.io/en/stable/) 
+- [sphinx-press-theme](https://schettino72.net/sphinx_press_site/)
+- [shibuya](https://shibuya.lepture.com/)
 
 ## sphinx-latexpdf
 

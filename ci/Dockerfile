@@ -1,4 +1,4 @@
-FROM python:slim
+FROM python:3.14-slim
 
 LABEL maintainer = "Christophe CHAUVET <christophe.chauvet+docker@gmail.com>"
 LABEL org.opencontainers.image.authors = "Mirounga Sphinx Team <https://github.com/mga-sphinx>"

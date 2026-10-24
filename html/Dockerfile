@@ -1,4 +1,4 @@
-FROM python:slim
+FROM python:3.14-slim
 
 LABEL maintainer = "Christophe CHAUVET <christophe.chauvet+docker@gmail.com>"
 LABEL org.opencontainers.image.authors = "Mirounga Sphinx Team <https://github.com/mga-sphinx>"
@@ -25,9 +25,10 @@ RUN apt-get update \
 
 RUN python3 -m pip install --no-cache-dir -U pip
 RUN python3 -m pip install --no-cache-dir Sphinx==9.1.1 Pillow==13.0.0 myst-parser==5.1.0 \
-      sphinx-rtd-theme \
+      sphinx-rtd-theme==3.1.0 \
       furo==2025.12.19 \
-      sphinx-book-theme \
-      sphinx-press-theme
+      sphinx-book-theme==1.4.0 \
+      sphinx-press-theme==0.9.1 \
+      shibuya==2026.7.12
 
 CMD ["make", "html"]
