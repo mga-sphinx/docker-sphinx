@@ -6,4 +6,4 @@ sphinx-press-theme==0.9.1
 shibuya==2026.7.12
 sphinx-lint==1.0.2
 Pillow==13.0.0
-myst-parser==5.1.0
+myst-parser==5.2.0
